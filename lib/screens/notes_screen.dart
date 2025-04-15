@@ -45,13 +45,20 @@ class _NotesScreenState extends State<NotesScreen> {
     String? content,
     int colorIndex = 0,
   }) async {
+    if (!mounted) return;
+
     final result = await showDialog<bool>(
       context: context,
       builder: (BuildContext dialogContext) {
         return NoteDialog(
           colorIndex: colorIndex,
           noteColors: noteColors,
-          onNoteSaved: (newTitle, newDescription, selectedColorIndex, date) async {
+          onNoteSaved: (
+            newTitle,
+            newDescription,
+            selectedColorIndex,
+            date,
+          ) async {
             if (id == null) {
               await NotesDatabase.instance.addNote(
                 newTitle,
@@ -69,7 +76,7 @@ class _NotesScreenState extends State<NotesScreen> {
               );
             }
 
-            if (Navigator.of(dialogContext).canPop()) {
+            if (dialogContext.mounted && Navigator.of(dialogContext).canPop()) {
               Navigator.of(dialogContext).pop(true);
             }
           },
@@ -99,7 +106,6 @@ class _NotesScreenState extends State<NotesScreen> {
             fontWeight: FontWeight.w600,
             color: Colors.amber,
             fontSize: 28,
-            
           ),
         ),
       ),
