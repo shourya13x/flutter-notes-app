@@ -18,7 +18,7 @@ This app supports adding, editing, deleting notes — all with a smooth UI and p
 
 - 🧠 Create, edit, and delete notes
 - 💡 Light & dark theme toggle
-- 💾 Local data storage using `shared_preferences` or `SQLite`
+- 💾 Local data storage using `SQLite`
 - 🎨 Clean & customizable UI
 - 📦 State management using custom `InheritedWidget` for efficient data sharing
 
