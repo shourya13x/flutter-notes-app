@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_cattalouge/database/notes_database.dart';
-import 'package:flutter_cattalouge/screens/note_card.dart';
-import 'package:flutter_cattalouge/screens/note_dialog.dart';
+import '../database/notes_database.dart';
+import 'note_card.dart';
+import 'note_dialog.dart';
 import 'package:lottie/lottie.dart';
 
 class NotesScreen extends StatefulWidget {
