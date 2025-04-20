@@ -11,7 +11,6 @@ This app supports adding, editing, deleting notes — all with a smooth UI and p
 |-------------|-------------|
 | ![Home](assets/screenshots/demo.png) | ![Create](assets/screenshots/emptyScreen.png) |
 
-> 📌 Place your screenshots inside `assets/screenshots/` folder and update names above.
 
 ---
 
