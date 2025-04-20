@@ -19,7 +19,6 @@ This app supports adding, editing, deleting notes — all with a smooth UI and p
 - 🧠 Create, edit, and delete notes
 - 💡 Light & dark theme toggle
 - 💾 Local data storage using `shared_preferences` or `SQLite`
-- 🔍 Search and sort notes (if you added)
 - 🎨 Clean & customizable UI
 - 📦 State management using custom `InheritedWidget` for efficient data sharing
 
@@ -30,7 +29,7 @@ This app supports adding, editing, deleting notes — all with a smooth UI and p
 - **Flutter** 🐦
 - **Dart**
 - **lottie**
-- **Shared Preferences / SQLite**
+- **SQLite**
 - **InheritedWidget** for state propagation
 
 ---
